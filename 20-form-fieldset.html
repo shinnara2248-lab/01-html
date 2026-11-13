@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼그룹</title>
+</head>
+
+<body>
+    <h1>폼그룹</h1>
+    <p>폼그룹으로 묶어줄때 fieldset, 제목 legend</p>
+
+    <form action="">
+        <fieldset>
+            <legend>필수요소</legend>
+            <label>아이디<input type="text" required></label><br>
+            <p>
+                <label for="ps">비밀번호</label>
+                <input type="password" name="" id="ps" required>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>선택요소</legend>
+            <p>
+                취미
+                <label>운동<input type="checkbox"></label>
+                <label>독서<input type="checkbox"></label>
+            </p>
+        </fieldset>
+
+        <input type="submit">
+
+    </form>
+
+</body>
+
+</html>

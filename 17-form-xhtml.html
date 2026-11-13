@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 폼</title>
+</head>
+<body>
+    <h1>회원가입</h1>
+    <p>name 이름은  form에서 주로 사용한다</p>
+    <p>name 변수(데이터를 저장하는 공간)</p>
+    <form action="./welcome.html" name="member">
+        <label for="uName">이름</label>
+        <input type="text" id="uName" name="uName"> <br>
+
+        <label>아이디<input name="uId"></label> <br>
+        <label>비밀번호 <input type="password" name="uPass"></label><br>
+
+        성별
+        <label>남자 <input type="radio" name="gender" checked></label>
+        <label>여자 <input type="radio" name="gender"></label><br>
+
+        취미
+        <label>독서<input type="checkbox" name="book" checked></label>
+        <label>필라테스<input type="checkbox" name="pilates"></label><br>
+
+        <label>사진 <input type="file"></label><br>
+
+        <label for="tel">전화번호</label>
+        <input id="tel" title="전화번호 첫번째자리" maxlength="4" size="4"> -
+        <input type="text" title="전화번호 두번째자리" maxlength="4" size="4"> -
+        <input type="text" title="전화번호 세번째자리" maxlength="4" size="4"><br>
+
+        <input type="text" placeholder="검색어를 입력하세요">
+        <input type="image" src="./images/icon/search.svg" alt="검색 돋보기"><br>
+
+        <input type="submit" value="회원가입">
+        <input type="reset" value="취소">
+
+
+    </form>
+</body>
+</html>
